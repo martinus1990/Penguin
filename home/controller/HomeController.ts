@@ -9,7 +9,7 @@ interface IHomeScope extends bScope{
 class HomeController extends bController{
 
     static partialUrl:string = "home/views/partial.html";
-    static url:string = "/myPage";
+    static url:string = "/home";
 
     public static $inject:string[] = [
         bGlobals.$SCOPE
