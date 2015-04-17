@@ -8,7 +8,7 @@ interface IHomeScope extends bScope{
 
 class HomeController extends bController{
 
-    static partialUrl:string = "/Typescript/app/home/views/partial.html";
+    static partialUrl:string = "home/views/partial.html";
 
     public static $inject:string[] = [
         bGlobals.$SCOPE
