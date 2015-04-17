@@ -5,11 +5,10 @@ import angular = require('angular');
 
 var application = angular.module('application', ['ngRoute', 'ngResource']);
 
-application.config(function ($routeProvider,$locationProvider) {
-    $locationProvider.html5Mode(true);
+application.config(function ($routeProvider) {
     $routeProvider.
-        when('/myPage', { controller: home, templateUrl: home.partialUrl}).
-        otherwise({ redirectTo: '/myPage' });
+        when(home.url, { controller: home, templateUrl: home.partialUrl}).
+        otherwise({ redirectTo: home.url });
 });
 
 export = application;
